@@ -15,8 +15,95 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
 /* mobile */
 @media only screen and (min-width: 375px) {
+  body {
+    background-color: var(--red);
+    background-image: url(../images/bg-intro-mobile.png);
+    background-size: contain;
+    color: #fff;
+  }
+
+  section.container {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Box One / Top Box / Left Pane */
+  div.box-one {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  div.box-one h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  div.box-one p {
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* Box Two / Bottom Box / Right Pane */
+
+  div.free-trial-quote {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 0.8rem 3rem;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  div.sign-up-form {
+    background-color: #fff;
+    padding: 1.3rem;
+    border-radius: 6px;
+  }
+
+  div.free-trial-quote span {
+    font-weight: 600;
+  }
+  input {
+    font-family: inherit;
+    border: 1px solid var(--grayish-blue);
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-weight: 800;
+  }
+  input[type="submit"] {
+    color: #fff;
+    background-color: var(--green);
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+  }
+
+  div.sign-up-form p {
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  a#terms-services {
+    color: var(--red);
+    font-weight: 800;
+    text-decoration: none;
+  }
 }
 /* desktop */
 @media only screen and (min-width: 1440px) {
