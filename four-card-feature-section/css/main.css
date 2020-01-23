@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+:root {
+  --main-red: hsl(0, 78%, 62%);
+  --main-cyan: hsl(180, 62%, 55%);
+  --main-orange: hsl(34, 97%, 64%);
+  --main-blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --gray-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile  */
+@media only screen and (min-width: 375px) {
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1440px) {
+}
