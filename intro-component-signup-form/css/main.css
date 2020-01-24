@@ -75,7 +75,61 @@ body {
   div.free-trial-quote span {
     font-weight: 600;
   }
+
+  div.form-control-box {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
   input {
+    font-family: inherit;
+    border: 1px solid var(--grayish-blue);
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    font-weight: 800;
+  }
+
+  input.form-error {
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    border: 2px solid var(--red);
+  }
+
+  input.form-success {
+    border: 2px solid var(--green);
+  }
+
+  .error-box {
+    position: relative;
+  }
+  .error-box:after {
+    content: attr(form-error-message);
+    position: absolute;
+    color: black;
+    font-size: 0.8rem;
+    right: 0;
+    bottom: -1.2rem;
+    font-style: italic;
+    color: var(--red);
+    font-weight: 600;
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid var(--blue);
+  }
+
+  button {
+    color: #fff;
+    background-color: var(--green);
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
     font-family: inherit;
     border: 1px solid var(--grayish-blue);
     padding: 1rem;
@@ -84,14 +138,6 @@ body {
     margin-bottom: 1rem;
     border-radius: 6px;
     font-weight: 800;
-  }
-  input[type="submit"] {
-    color: #fff;
-    background-color: var(--green);
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    border-radius: 6px;
   }
 
   div.sign-up-form p {
@@ -104,6 +150,13 @@ body {
     color: var(--red);
     font-weight: 800;
     text-decoration: none;
+  }
+
+  /*shared box shadowd*/
+  div.free-trial-quote,
+  div.sign-up-form {
+    -webkit-box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.3);
   }
 }
 /* desktop */
@@ -125,5 +178,9 @@ body {
 
   div.box-one h1 {
     font-size: 3rem;
+  }
+
+  div.free-trial-quote {
+    padding: 1rem 3rem;
   }
 }
