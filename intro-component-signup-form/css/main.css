@@ -169,7 +169,9 @@ body {
   section.container {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin: 8rem auto;
+    width: 60%;
   }
 
   div.box-one {
@@ -177,10 +179,18 @@ body {
   }
 
   div.box-one h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  div.box-one p {
+    max-width: 400px;
   }
 
   div.free-trial-quote {
     padding: 1rem 3rem;
+  }
+
+  div.sign-up-form {
+    max-width: 500px;
   }
 }
