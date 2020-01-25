@@ -25,34 +25,32 @@
 </head>
 
 <body>
-  <header>
-    <figure>
-      <img src="images/logo.svg" alt="Base Apparel logo">
-    </figure>
-  </header>
-  <section class="container">
+  <section class="flex-container">
+    <figure class="banner mobile"><img src="images/logo.svg" alt="Base Apparel Logo" /></figure>
     <div class="pane-1">
-      <h1>We're coming soon</h1>
-      <p>Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <div class="email-box">
-        <input type="email" placeholder="Email Address" />
-        <button></button>
+      <figure class="banner desktop">
+        <img src="images/logo.svg" alt="Base Apparel Logo" />
+      </figure>
+      <div class="inner-pane">
+        <h1><span>We're</span> coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form action="#" method="POST" class="email-box">
+          <input type="email" placeholder="Email Address" />
+          <button><svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+              <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" /></svg></button>
+        </form>
       </div>
-
     </div>
-
     <div class="pane-2">
-
     </div>
   </section>
-
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
