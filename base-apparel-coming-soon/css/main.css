@@ -39,7 +39,6 @@ body {
 
   .banner.mobile {
     padding: 1.5rem;
-    background-color: red;
   }
 
   .banner.mobile img {
@@ -94,15 +93,15 @@ body {
     outline: none;
     border: 2px solid #eee;
     padding: 1rem 2rem;
-    width: 80%;
+    width: 100%;
     font-family: inherit;
     font-weight: 600;
     font-size: 1fem;
   }
 
   form.email-box button {
-    padding: 1rem 2.5rem;
-    border-radius: 20px;
+    padding: .9rem 1.8rem;
+    border-radius: 40px;
     outline: none;
     border: none;
     background: var(--fadeColor);
@@ -110,8 +109,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 1rem;
-    right: 3rem;
+    right: 0;
+    top: 0;
   }
   /* PICTURE SIDE */
   .pane-2 {
@@ -168,10 +167,16 @@ body {
     padding: 1rem 2rem;
   }
 
-
   form.email-box {
     padding: 1rem;
     position: relative;
+  }
+
+  form.email-box button {
+    border-radius: 20px;
+    padding: 1rem 2.5rem;
+    top: 1rem;
+   
   }
 
   .pane-2 {
