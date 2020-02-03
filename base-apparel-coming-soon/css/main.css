@@ -120,6 +120,8 @@ body {
     justify-content: center;
     right: 0;
     top: 0;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 1rem 1px hsla(0, 36%, 70%, 0.8);
   }
   /* PICTURE SIDE */
   .pane-2 {
