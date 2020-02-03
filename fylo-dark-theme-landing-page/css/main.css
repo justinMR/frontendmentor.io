@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap");
+
+:root {
+  --dark-blue-intro-email: hsl(217, 28%, 15%);
+  --dark-blue-main: hsl(218, 28%, 13%);
+  --dark-blue-footer: hsl(216, 53%, 9%);
+  --dark-blue-testimonials: hsl(219, 30%, 18%);
+  --page-cyan: hsl(176, 68%, 64%);
+  --page-blue: hsl(198, 60%, 50%);
+  --page-white: hsl(0, 0%, 100%);
+}
+html,
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-blue-main);
+  color: var(--page-white);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+button,
+input[submit],
+.cta {
+  font-family: "Raleway", sans-serif;
+}
+
+#hero,
+aside {
+  background-color: var(--dark-blue-intro-email);
+}
+
+#testimonials {
+  background-color: var(--dark-blue-testimonials);
+}
+
+footer {
+  background-color: var(--dark-blue-footer);
+}
+
+/* mobile */
+@media only screen and (min-width: 375px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .page-logo img {
+    width: 8rem;
+    height: auto;
+  }
+
+  .team-box-container {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .team-box-container .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+}
